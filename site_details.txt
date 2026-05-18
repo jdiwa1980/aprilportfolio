@@ -1,0 +1,4 @@
+About Services Tools Projects Contact
+
+font: canva sans(proprietary) alternate: opensans
+background-color: #918a86
