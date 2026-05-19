@@ -23,8 +23,8 @@ const Navbar = () => {
     return (
         <header className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? "glass-strong py-3" : "bg-transparent py-5"} z-50`}>
             <nav className="container mx-auto px-5 flex items-center justify-between">
-                <a href="#" className="text-xl font-bold tracking-tight hover:text-primary">ABD 
-                    <span className="text-primary">/</span>
+                <a href="#" className="text-darkgrey text-xl font-bold tracking-tight hover:text-white">ABD 
+                    <span className="text-primary hover:text-white">.</span>
                 </a>
                 {/* Desktop Nav  */}
                 <div className="hidden md:flex items-center gap-1">
@@ -41,12 +41,10 @@ const Navbar = () => {
                     </div>
                 </div>
                 {/* RIGHT - empty space for balance */}
-                <div className="w-20"></div>
-
-
+                <div className="w-20">
+                    {/* Can be used for future additions  */}
+                </div>
             </nav>
-
-
         </header>
       );
 }

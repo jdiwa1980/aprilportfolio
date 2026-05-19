@@ -2,6 +2,8 @@
 import  Hero  from './sections/Hero';
 import  About  from './sections/About';
 import Navbar from './layout/navbar';
+import CoreValues from './sections/CoreValues';
+import WhyHire from './sections/WhyHire';
 
 function App() {
   
@@ -12,7 +14,10 @@ function App() {
         <Navbar />
         <main>
           <Hero />
-          <About></About>
+          <About />
+          <CoreValues />
+          <WhyHire />
+
         </main>
       </div>
       

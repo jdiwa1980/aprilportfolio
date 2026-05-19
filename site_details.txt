@@ -2,3 +2,8 @@ About Services Tools Projects Contact
 
 font: canva sans(proprietary) alternate: opensans
 background-color: #918a86
+
+1) image on phone and desktop not the same size
+2) remove image moving up and down.
+
+

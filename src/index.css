@@ -3,11 +3,12 @@
 
 @theme {
   --color-background: #918a86;
+  --color-background-litegray: #d9d9d9;
   --color-foreground: #f0f2f5;
 
   --color-headline-color: #f4e4f5;
-
   --color-primary: #dc76e3;
+  --color-darkgrey: #242323;
 }
 
 @layer base {
