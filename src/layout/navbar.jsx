@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { X, Menu } from "lucide-react"; 
 
 const navLinks = [
     { href: "#about", label: "About"},
@@ -9,6 +10,7 @@ const navLinks = [
 ]
 
 const Navbar = () => {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
@@ -23,8 +25,8 @@ const Navbar = () => {
     return (
         <header className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? "glass-strong py-3" : "bg-transparent py-5"} z-50`}>
             <nav className="container mx-auto px-5 flex items-center justify-between">
-                <a href="#" className="text-darkgrey text-xl font-bold tracking-tight hover:text-white">ABD 
-                    <span className="text-primary hover:text-white">.</span>
+                <a href="#" className="text-gray-700 text-xl font-bold tracking-tight hover:text-white">ABD 
+                    {/* <span className="text-primary hover:text-white">//</span> */}
                 </a>
                 {/* Desktop Nav  */}
                 <div className="hidden md:flex items-center gap-1">
@@ -32,9 +34,11 @@ const Navbar = () => {
                         {navLinks.map((link, idx) => (
                             <a href={link.href}
                                key={idx}
-                               className="px-4"
+                               className={`${isScrolled ? "text-gray-700" : "text-white"} group px-4 py-2`}
+                            //    
                             >
                                 {link.label}
+                                <div className={`${isScrolled ? "bg-gray-700" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`}/>
                             </a>
                         ))}
 
@@ -44,7 +48,31 @@ const Navbar = () => {
                 <div className="w-20">
                     {/* Can be used for future additions  */}
                 </div>
+                {/* Mobile Menu Button  */}
+                <button className="md:hidden p-2 text-foreground cursor-pointer"
+                        onClick={() => setIsMobileMenuOpen((prev) => !prev)} 
+                > {/* this is what makes the isMobileMenuOpen true when the button is clicked and renders the html  */}
+                    {isMobileMenuOpen ? <X size={24}/> : <Menu size={24} />}       
+                </button>
             </nav>
+            {/* Mobile Menu  */}
+            {/* using useState() to toggle the menu from false to true  */}
+            {isMobileMenuOpen && (
+                <div className="md:hidden glass-strong animate-fade-in">
+                    <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
+                        {navLinks.map((link, index) => (
+                            <a 
+                               href={link.href} 
+                               key={index}
+                               onClick={() => setIsMobileMenuOpen(false)}
+                               className="group text-lg text-gray-700 hover:text-white py-2"
+                               >
+                            {link.label}
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            )}
         </header>
       );
 }

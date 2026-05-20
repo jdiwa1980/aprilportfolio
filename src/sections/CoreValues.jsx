@@ -34,7 +34,7 @@ const CoreValues = () => {
                         <h1 className="text-darkgrey animate-fade-in animation-delay-200 text-5xl font-bold leading-tight md:text-7xl lg:text-[10rem]">
                         Core <br /> Values
                         </h1>
-                        <h6 className="mt-4 text-sm uppercase tracking-[0.25em] text-darkgrey animate-fade-in animation-delay-300">
+                        <h6 className="mt-10 text-sm uppercase tracking-[0.25em] text-darkgrey animate-fade-in animation-delay-300">
                             values i believe in
                         </h6>
                     </div>

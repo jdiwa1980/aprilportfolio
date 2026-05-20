@@ -9,6 +9,9 @@
   --color-headline-color: #f4e4f5;
   --color-primary: #dc76e3;
   --color-darkgrey: #242323;
+  --color-dark-blue: #3c567a;
+  --color-lite-blue: #82b2f5;
+
 }
 
 @layer base {
