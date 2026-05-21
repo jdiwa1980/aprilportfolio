@@ -25,7 +25,7 @@ const Navbar = () => {
     return (
         <header className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? "glass-strong py-3" : "bg-transparent py-5"} z-50`}>
             <nav className="container mx-auto px-5 flex items-center justify-between">
-                <a href="#" className="text-gray-700 text-xl font-bold tracking-tight hover:text-white">ABD 
+                <a href="#" className="text-white text-xl font-bold tracking-tight hover:text-pink-300">ABD 
                     {/* <span className="text-primary hover:text-white">//</span> */}
                 </a>
                 {/* Desktop Nav  */}
@@ -34,11 +34,11 @@ const Navbar = () => {
                         {navLinks.map((link, idx) => (
                             <a href={link.href}
                                key={idx}
-                               className={`${isScrolled ? "text-gray-700" : "text-white"} group px-4 py-2`}
+                               className={`${isScrolled ? "text-black/50" : "text-white"} group px-4 py-2`}
                             //    
                             >
                                 {link.label}
-                                <div className={`${isScrolled ? "bg-gray-700" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`}/>
+                                <div className={`${isScrolled ? "bg-black/50" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`}/>
                             </a>
                         ))}
 
@@ -65,7 +65,7 @@ const Navbar = () => {
                                href={link.href} 
                                key={index}
                                onClick={() => setIsMobileMenuOpen(false)}
-                               className="group text-lg text-gray-700 hover:text-white py-2"
+                               className="group text-lg text-gray-50 hover:text-pink-300 py-2"
                                >
                             {link.label}
                             </a>

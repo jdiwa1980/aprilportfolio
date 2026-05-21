@@ -4,6 +4,8 @@ import  About  from './sections/About';
 import Navbar from './layout/navbar';
 import CoreValues from './sections/CoreValues';
 import WhyHire from './sections/WhyHire';
+import { Footer } from './layout/footer';
+import Services from './sections/Services';
 
 function App() {
   
@@ -16,9 +18,11 @@ function App() {
           <Hero />
           <About />
           <CoreValues />
-          <WhyHire />
+          <WhyHire /> 
+          <Services />
 
         </main>
+        <Footer />
       </div>
       
     </>

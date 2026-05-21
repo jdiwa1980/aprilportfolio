@@ -22,19 +22,19 @@ const CoreValues = () => {
                 <img
                 src="/sections/corevalues.png"
                 alt="corevalues"
-                className="w-full max-w-6xl object-contain animate-fade-in animation-delay-300"
+                className="w-full max-w-7xl object-contain animate-fade-in animation-delay-300"
                 />
             </div>
             <div className="container relative z-10 mx-auto px-6">
 
-                <div className="grid lg:grid-cols-2 gap-x-1 items-start">
+                <div className="grid lg:grid-cols-3 gap-x-1 items-start">
 
                     {/* LEFT COLUMN */}
-                    <div className="-space-y-10">
-                        <h1 className="text-darkgrey animate-fade-in animation-delay-200 text-5xl font-bold leading-tight md:text-7xl lg:text-[10rem]">
+                    <div className="space-y-0.5">
+                        <h1 className="text-darkgrey animate-fade-in animation-delay-200 text-5xl font-bold leading-tight md:text-xl lg:text-[5rem]">
                         Core <br /> Values
                         </h1>
-                        <h6 className="mt-10 text-sm uppercase tracking-[0.25em] text-darkgrey animate-fade-in animation-delay-300">
+                        <h6 className="mt-1 text-sm uppercase tracking-[0.25em] text-darkgrey animate-fade-in animation-delay-300">
                             values i believe in
                         </h6>
                     </div>

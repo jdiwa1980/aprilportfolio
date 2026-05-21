@@ -4,7 +4,17 @@ font: canva sans(proprietary) alternate: opensans
 background-color: #918a86
 
 1) image on phone and desktop not the same size
-2) remove image moving up and down.
-3) ABD inline with portfolio.
+2) remove image moving up and down. => DONE
+3) ABD inline with portfolio. => DONE
+4) Make Hero Image bigger and realign to center of "Portfolio"
+
+     Portfolio
+     h6     h6
+
+==================
+https://www.facebook.com/reel/800086066516838
+Printer brand: EPSON L3110
+	       EPSON L3250
+	       EPSON L3210
 
 

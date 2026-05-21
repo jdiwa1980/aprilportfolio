@@ -25,7 +25,7 @@ const WhyHire = () => {
     ]
 
     return ( 
-        <section id="whyhire" className="bg-background-litegray py-32">
+        <section id="whyhire" className="py-32 bg-background-litegray">
             {/* Background Picture  */}
             <div className="absolute flex justify-end items-center">
                 <img src="/sections/litebulb.png" 
