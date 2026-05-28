@@ -3,10 +3,10 @@ const About = () => {
     <section
       id="about"
       className="relative overflow-hidden bg-background-litegray py-32"
-    >
+    > 
       
       {/* Background Image */}
-      <div className="absolute inset-0 flex justify-end items-center opacity-75">
+      <div className="absolute inset-0 flex justify-end items-center opacity-50 pointer-events-none">
         <img
           src="/sections/about_background.png"
           alt="workspace"
@@ -17,7 +17,7 @@ const About = () => {
       {/* Content */}
       <div className="container relative z-10 mx-auto px-6">
         
-        <div className="max-w-2xl space-y-8">
+        <div className="max-w-2xl space-y-8 lg:pl-10">
           
           <div className="text-darkgrey animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold leading-tight text-secondary-foreground">

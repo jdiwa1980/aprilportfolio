@@ -18,7 +18,7 @@ const CoreValues = () => {
         className="relative overflow-hidden bg-background-litegray py-32"
         >
             {/* Background Image  */}
-            <div className="absolute inset-0 flex justify-end items-center opacity-75">
+            <div className="absolute inset-0 flex justify-end items-center opacity-90">
                 <img
                 src="/sections/corevalues.png"
                 alt="corevalues"

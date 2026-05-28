@@ -59,7 +59,7 @@ const Navbar = () => {
             {/* using useState() to toggle the menu from false to true  */}
             {isMobileMenuOpen && (
                 <div className="md:hidden glass-strong animate-fade-in">
-                    <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
+                    <div className="container mx-auto px-6 py-6 flex flex-col gap-4 items-center justify-center">
                         {navLinks.map((link, index) => (
                             <a 
                                href={link.href} 

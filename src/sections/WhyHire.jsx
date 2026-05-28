@@ -17,7 +17,7 @@ const WhyHire = () => {
         },
         {
             id: "03",
-            title: "Cost Effective Expertise",
+            title: "Cost-Effective Expertise",
             content: `Great senior-level operational support 
             without the overhead of a full-time hire. Flexible, reliable, and ready to
             deliver.`
@@ -39,20 +39,29 @@ const WhyHire = () => {
                     Operation Support <br />
                     Specialist? 
                 </h1>
-                {/* Reasons Cards  */}
+                
                 <div className="pt-10 grid lg:grid-cols-3 gap-4 items-start">
+                    {/* Reasons Cards  */}
                     {reasons.map((item, idx) =>(
                         <div
                         key={idx}
-                        className="bg-white/40 backdrop-blur-md p-6 rounded-2xl animate-fade-in shadow-lg"
+                        className="bg-white/40 backdrop-blur-md p-10 rounded-4xl animate-fade-in shadow-lg h-full"
                         style={{ animationDelay: `${(idx + 1) * 100}ms` }}
                         >
-                            <div className="flex flex-row p-1">
-                                <h3 className="text-gray-50 text-lg font-bold pr-1">{item.id}</h3>
-                                <h3 className="text-darkgrey text-lg font-semibold mb-2">
+                            <div className="flex items-center gap-4">
+                                <span className="text-7xl text-gray-500/20 font-semibold">
+                                    {item.id}
+                                </span>
+                                <div className="flex flex-col">
+                                
+                                {/* <h3 className="text-gray-50 text-lg font-bold pr-1">{item.id}</h3> */}
+                                <h3 className="pt-6 text-darkgrey text-xl font-semibold leading-snug">
                                     {item.title}
                                 </h3>
                             </div>
+
+                            </div>
+                            
                         
 
                         <p className="text-darkgrey text-sm leading-relaxed">
