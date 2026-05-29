@@ -19,15 +19,15 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-background-litegray py-12">
+    <footer className="bg-hero-bg py-12">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo & Copyright */}
           <div className="z-10 text-center md:text-left">
-            <a href="#" className="text-gray-700 text-xl font-bold tracking-tight">
-              ABD<span className="text-gray-700">.</span>
+            <a href="#" className="text-gray-50 text-xl font-bold tracking-tight">
+              ABD<span className="text-gray-50">.</span>
             </a>
-            <p className="text-sm text-gray-700 mt-2">
+            <p className="text-sm text-gray-50 mt-2">
               © {currentYear} aprilrosediwa. All rights reserved.
             </p>
           </div>
@@ -38,7 +38,7 @@ export const Footer = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-black/50 hover:text-white transition-colors"
+                className="text-sm text-gray-100 hover:text-pink-300 transition-colors"
               >
                 {link.label}
               </a>

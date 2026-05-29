@@ -57,9 +57,6 @@ const Engagement = () => {
                     </div>
                 ))}
             </div>
-            
-            
-
         </section>
     );
 }

@@ -10,6 +10,8 @@ import Services from './sections/Services';
 import Tools from './sections/Tools';
 import Projects from './sections/Projects';
 import Engagement from './sections/Engagement';
+import Packages from './sections/Packages';
+import Connect from './sections/Connect';
 
 function App() {
   
@@ -28,6 +30,8 @@ function App() {
           <Tools />
           <Projects />
           <Engagement />
+          <Packages />
+          <Connect />
 
         </main>
         <Footer />
