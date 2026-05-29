@@ -23,14 +23,15 @@ const Connect = () => {
                  className="relative overflow-hidden bg-hero-bg py-30"
         >
             {/* Background Image  */}
-            <div className="absolute inset-0 flex justify-end items-center pointer-events-none">
+            <div className="absolute inset-0 flex justify-end pointer-events-none">
+                {/* <div className="bg-linear-to-r from-hero-bg/80 via-hero-bg/40 to-transparent" /> */}
                 <img
                 src="/sections/connect_tata.png"
                 alt="connect_tata"
-                className="w-120 max-w-7xl object-contain animate-fade-in animation-delay-300"
+                className="w-80 max-w-7xl object-contain animate-fade-in animation-delay-300 lg:w-120 opacity-10"
                 />
             </div>
-            <div className="container mx-auto px-6">
+            <div className="relative z-10 container mx-auto px-6">
                 {/* Heading  */}
                 <div className="px-6 mx-auto text-background-litegray">
                     <div className="flex items-start">
@@ -42,7 +43,7 @@ const Connect = () => {
                                          className="w-25 h-25 -mt-5"
                                     />
                     </div>
-                    <h1 className="-mt-10 italic text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
+                    <h1 className="-mt-6 italic text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
                         Connect
                     </h1>   
                         <p>
@@ -52,7 +53,7 @@ const Connect = () => {
                         </p>
                 </div>
                 {/* Contact List  */}
-                <div className="flex flex-col gap-3 mt-12">
+                <div className="flex flex-col gap-3 mt-12 z-10">
                     {contactList.map((item, idx) => (
                         <div className="flex items-center gap-4 mt-4">
                             <span className="w-16 h-16 shrink-0 rounded-full ring-6 ring-inset ring-white backdrop-blur-sm p-1 flex items-center justify-center shadow-lg">
