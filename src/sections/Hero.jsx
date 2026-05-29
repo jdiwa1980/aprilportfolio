@@ -5,7 +5,7 @@ const Hero = () => {
             <div className="text-center">
                 {/* Wrap title + subtitles together  */}
                 <div className="inline-block">
-                    <h1 className="text-white animate-fade-in animation-delay-200 text-9xl font-bold leading-tight md:text-9xl lg:text-[15rem]">
+                    <h1 className="text-white animate-fade-in animation-delay-200 text-8xl font-bold leading-tight md:text-9xl lg:text-[15rem]">
                     {/* <span className="text-lite-blue text-opacity-50">abd</span> */}
                     Portfolio
                     </h1>
@@ -16,12 +16,12 @@ const Hero = () => {
                 </div>
             </div>
             {/* Middle Column - Profile Image */}
-            <div className="flex justify-center">
+            <div className="flex justify-center w-full">
                 <img src="/hero/tata_hero_pic.png" 
                      alt="tata_hero"
                     //  className="w-3/4 max-w-xl animate-fade-in animation-delay-300"
                     //  className="-mt-24 w-200 md:w-105 lg:w-135 animate-fade-in animation-delay-300"
-                    className="-mt-6 md:-mt-16 lg:-mt-60 w-[520px] md:w-[620px] lg:w-[1020px] animate-fade-in animation-delay-300"
+                    className="ml-15 -mt-6 md:-mt-16 lg:-mt-60 w-180 md:w-155 lg:w-255 animate-fade-in animation-delay-300"
                 />  
             </div>
             
