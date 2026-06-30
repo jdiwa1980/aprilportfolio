@@ -1,17 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Playfair+Display:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-background: #918a86;
-  --color-background-litegray: #d9d9d9;
-  --color-hero-bg: #4a4844;
-  --color-foreground: #f0f2f5;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --color-background: rgb(249, 248, 246);
 
-  --color-headline-color: #f4e4f5;
-  --color-primary: #dc76e3;
-  --color-darkgrey: #242323;
-  --color-dark-blue: #3c567a;
-  --color-lite-blue: #82b2f5;
+  --color-light-grey: #8f887a;
+  --color-dark: #1a1a1a;
 
 }
 
@@ -27,7 +23,7 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    font-family: "Inter", sans-serif;
+    font-family: "Cormorant Garamond", sans-serif;
   }
 }
 
@@ -74,6 +70,19 @@
     transform: translateY(-12px);
   }
 }
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.5s ease-out forwards;
 }
 
 
@@ -142,3 +151,4 @@
     0 0 80px color-mix(in srgb, var(--color-primary) 25%, transparent );
   }
 
+}

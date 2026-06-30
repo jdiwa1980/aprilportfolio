@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <div className='min-h-screen overflow-x-hidden'>
+      <div className='min-h-screen overflow-x-hidden bg-[#F9F8F6] text-dark font-sans'>
         <Navbar />
         <main>
           <Hero />

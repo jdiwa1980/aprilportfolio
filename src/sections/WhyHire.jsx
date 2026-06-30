@@ -25,54 +25,8 @@ const WhyHire = () => {
     ]
 
     return ( 
-        <section id="whyhire" className="py-32 bg-background-litegray">
-            {/* Background Picture  */}
-            <div className="absolute flex justify-end items-center">
-                <img src="/sections/litebulb.png" 
-                     alt="litebulb" 
-                />
-            </div>
-            {/* Headers  */}
-            <div className="container relative z-10 mx-auto px-6">
-                <h1 className="text-darkgrey italic text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                    Why Hire An <br />
-                    Operation Support <br />
-                    Specialist? 
-                </h1>
-                
-                <div className="pt-10 grid lg:grid-cols-3 gap-4 items-start">
-                    {/* Reasons Cards  */}
-                    {reasons.map((item, idx) =>(
-                        <div
-                        key={idx}
-                        className="bg-white/40 backdrop-blur-md p-10 rounded-4xl animate-fade-in shadow-lg h-full"
-                        style={{ animationDelay: `${(idx + 1) * 100}ms` }}
-                        >
-                            <div className="flex items-center gap-4">
-                                <span className="text-7xl text-gray-500/20 font-semibold">
-                                    {item.id}
-                                </span>
-                                <div className="flex flex-col">
-                                
-                                {/* <h3 className="text-gray-50 text-lg font-bold pr-1">{item.id}</h3> */}
-                                <h3 className="pt-6 text-darkgrey text-xl font-semibold leading-snug">
-                                    {item.title}
-                                </h3>
-                            </div>
-
-                            </div>
-                            
-                        
-
-                        <p className="text-darkgrey text-sm leading-relaxed">
-                            {item.content}
-                        </p>
-                        </div>
-                    ))}
-                </div>
-
-            </div>
-        </section>
+        <>
+        </>
      );
 }
  

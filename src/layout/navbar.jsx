@@ -4,9 +4,9 @@ import { X, Menu } from "lucide-react";
 const navLinks = [
     { href: "#about", label: "About"},
     { href: "#services", label: "Services"},
-    { href: "#tools", label: "Tools"},
-    { href: "#projects", label: "Projects"},
-    { href: "#contact", label: "Contact"}
+    { href: "#work", label: "Work"},
+    { href: "#process", label: "Process"},
+    { href: "#price", label: "Pricing"}
 ]
 
 const Navbar = () => {
@@ -23,56 +23,32 @@ const Navbar = () => {
         },[])
     
     return (
-        <header className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? "glass-strong py-3" : "bg-transparent py-5"} z-50`}>
-            <nav className="container mx-auto px-5 flex items-center justify-between">
-                <a href="#" className="text-white text-xl font-bold tracking-tight hover:text-pink-300">ABD 
-                    {/* <span className="text-primary hover:text-white">//</span> */}
+        <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+            isScrolled
+                ? "bg-white/40 backdrop-blur-xl border-b border-white/20"
+                : "bg-transparent"
+            }`}>
+            <div className="px-6 md:px-12 lg:px-24 py-5 flex items-center justify-between">
+                <a href="" className="font-serif text-xt tracking-tight">
+                    April Rose 
+                    <span className="italic text-light-grey"> Bertin</span>
                 </a>
-                {/* Desktop Nav  */}
-                <div className="hidden md:flex items-center gap-1">
-                    <div className="px-2 py-1 flex items-center gap-1">
-                        {navLinks.map((link, idx) => (
-                            <a href={link.href}
-                               key={idx}
-                               className={`${isScrolled ? "text-black/50" : "text-white"} group px-4 py-2`}
-                            //    
-                            >
-                                {link.label}
-                                <div className={`${isScrolled ? "bg-black/50" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`}/>
-                            </a>
-                        ))}
-
-                    </div>
-                </div>
-                {/* RIGHT - empty space for balance */}
-                <div className="w-20">
-                    {/* Can be used for future additions  */}
-                </div>
-                {/* Mobile Menu Button  */}
-                <button className="md:hidden p-2 text-foreground cursor-pointer"
-                        onClick={() => setIsMobileMenuOpen((prev) => !prev)} 
-                > {/* this is what makes the isMobileMenuOpen true when the button is clicked and renders the html  */}
-                    {isMobileMenuOpen ? <X size={24}/> : <Menu size={24} />}       
-                </button>
-            </nav>
-            {/* Mobile Menu  */}
-            {/* using useState() to toggle the menu from false to true  */}
-            {isMobileMenuOpen && (
-                <div className="md:hidden glass-strong animate-fade-in">
-                    <div className="container mx-auto px-6 py-6 flex flex-col gap-4 items-center justify-center">
-                        {navLinks.map((link, index) => (
-                            <a 
-                               href={link.href} 
-                               key={index}
-                               onClick={() => setIsMobileMenuOpen(false)}
-                               className="group text-lg text-gray-50 hover:text-pink-300 py-2"
-                               >
-                            {link.label}
-                            </a>
-                        ))}
-                    </div>
-                </div>
-            )}
+                <nav className="hidden md:flex items-center gap-9">
+                    {navLinks.map((item, idx) => (
+                        <a href={item.href}
+                            className="text-xs tracking-[0.2em] uppercase font-medium text-dark transition-colors"
+                            key={idx}
+                        >
+                            {item.label}
+                        </a>
+                    ))}
+                </nav>
+                <a href="#contact"
+                        className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 border border-dark text-dark hover:bg-dark  hover:text-white transition-colors text-[11px] tracking-[0.2em] uppercase font-medium" 
+                    >
+                        Get in Touch
+                </a>
+            </div>
         </header>
       );
 }
