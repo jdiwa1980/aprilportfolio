@@ -52,7 +52,7 @@ const About = () => {
           </p>
           <ul className="divide-y divide-[#e5e1d8] border-t border-b border-[#e5e1d8]">
             {coreValues.map((item, idx) => (
-              <li className="py-7">
+              <li className="py-7" key={idx}>
                 <div className="flex items-baseline gap-4">
                   <span className="font-serif text-sm text-light-grey">
                     {item.key}
