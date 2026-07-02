@@ -6,7 +6,7 @@ const navLinks = [
     { href: "#services", label: "Services"},
     { href: "#work", label: "Work"},
     { href: "#process", label: "Process"},
-    { href: "#price", label: "Pricing"}
+    { href: "#pricing", label: "Pricing"}
 ]
 
 const Navbar = () => {
@@ -29,7 +29,7 @@ const Navbar = () => {
                 : "bg-transparent"
             }`}>
             <div className="px-6 md:px-12 lg:px-24 py-5 flex items-center justify-between">
-                <a href="" className="font-serif text-xt tracking-tight">
+                <a href="" className="font-serif text-xl tracking-tight">
                     April Rose 
                     <span className="italic text-light-grey"> Bertin</span>
                 </a>

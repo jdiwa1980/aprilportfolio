@@ -38,7 +38,7 @@ const Hero = () => {
                         I'm April Rose — a Business Operations Support Specialist helping founders, studios, and growing teams turn chaos into clear systems. Seven+ years of project coordination, virtual support, and day‑to‑day operational care.
                     </p>
                     <div className="mt-10 flex flex-wrap items-center gap-4">
-                        <a href="#projects"
+                        <a href="#work"
                             className="inline-flex items-center gap-2 px-7 py-4 bg-dark text-white hover:bg-[#333] transition-colors text-xs tracking-[0.2em] uppercase font-medium"
                         >
                             View Selected Work
@@ -53,10 +53,10 @@ const Hero = () => {
                 </div>
                 {/* Right Hero picture  */}
                 <div className="lg:col-span-5 animate-fade-up animation-delay-200">
-                        <div className="relative aspect-3/4 max-w-lg ml-auto overflow-hidden bg-[#eae7df]">
-                            <img src="/hero/herotata.JPG" 
+                        <div className="relative aspect-4/5 w-full overflow-hidden bg-[#eae7df]">
+                            <img src="/hero/hero.avif" 
                                 alt="hero img"
-                                className="w-full h-full object-cover"
+                                className="absolute inset-0 w-full h-full object-cover"
                             />
                             <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between text-white drop-shadow">
                                 <div className="text-xs tracking-[0.25em] uppercase">Est. 7+ years</div>

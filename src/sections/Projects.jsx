@@ -39,18 +39,18 @@ const Projects = () => {
     return (
         <section className="px-6 md:px-12 lg:px-24 py-24 md:py-32 border-t border-[#e5e1d8]" id="work">
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
-                <div className="max-w-xl">
+                <div className="max-w-2xl">
                     <p className="text-xs tracking-[0.3em] uppercase text-light-grey mb-6">
                         Selected Work — 06
                     </p>
                     <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight">
-                        A few recent<em className="italic text-light-grey"> engagements</em>
-                         .
+                        A few recent
+                        <em className="italic text-light-grey"> engagements</em>.  
                     </h2>
                 </div>
                 <p className="md:max-w-sm text-sm leading-relaxed text-[#5c5c5c] font-light">
-                    From multi‑site retail fit‑outs to brand identity coordination
-                    -     a snapshot of recent work across operations and creative ops.
+                    From multi‑site retail fit‑outs to brand identity coordination — 
+                 a snapshot of recent work across operations and creative ops.
                 </p>
             </div>
             <div className="space-y-20 md:space-y-28">

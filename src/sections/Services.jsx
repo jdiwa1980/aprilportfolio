@@ -22,7 +22,7 @@ const Services = () => {
         }
     ]
     return (
-        <section className="px-6 md:px-12 lg:px-24 py-24 md:py-32 border-t border-[#e5e1d8]">
+        <section className="px-6 md:px-12 lg:px-24 py-24 md:py-32 border-t border-[#e5e1d8]" id="services">
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
                 <div className="max-w-xl">
                     <p className="text-xs tracking-[0.3em] uppercase text-light-grey mb-6">Services - 03</p>
