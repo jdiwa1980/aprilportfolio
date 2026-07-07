@@ -53,12 +53,12 @@ const Hero = () => {
                 </div>
                 {/* Right Hero picture  */}
                 <div className="lg:col-span-5 animate-fade-up animation-delay-200">
-                        <div className="relative aspect-4/5 w-full overflow-hidden bg-[#eae7df]">
-                            <img src="/hero/hero.avif" 
+                        <div className="relative aspect-4/5 w-full overflow-hidden bg-transparent">
+                            <img src="/hero/tata_hero_pic.png" 
                                 alt="hero img"
                                 className="absolute inset-0 w-full h-full object-cover"
                             />
-                            <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between text-white drop-shadow">
+                            <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between text-light-grey drop-shadow">
                                 <div className="text-xs tracking-[0.25em] uppercase">Est. 7+ years</div>
                                 <div className="font-serif text-2xl italic">since 2017</div>
                             </div>
