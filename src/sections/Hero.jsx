@@ -58,7 +58,10 @@ const Hero = () => {
                                 alt="hero img"
                                 className="absolute inset-0 w-full h-full object-cover"
                             />
-                            <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between text-light-grey drop-shadow p-0">
+                            {/* Gradient  */}
+                            {/* <div className="absolute inset-x-0 bottom-0 h-28 bg-linear-to-t from-black/70 via-black/30 to-transparent" /> */}
+                            {/* text  */}
+                            <div className="absolute bottom-2 lg:bottom-6 left-6 right-6 flex items-end justify-between text-dark drop-shadow">
                                 <div className="text-xs tracking-[0.25em] uppercase">Est. 7+ years</div>
                                 <div className="font-serif text-2xl italic">since 2017</div>
                             </div>

@@ -29,7 +29,7 @@ export const Footer = () => {
                   <Phone size={14}/>
                   Phone
                 </p>
-                <p className="font-serif text-xl md:text-3xl font-light group-hover:text-[#a39b8b] transition-colors flex items-center gap-3">
+                <p className="font-serif text-xs md:text-3xl font-light group-hover:text-[#a39b8b] transition-colors flex items-center gap-3">
                     +63 966 99 37108 (Philippine Number) <br />
                     +353 85 7872 834 (Ireland Number)
                     <ArrowUpRight size={20 }  strokeWidth={1.5} className="opacity-0 group-hover:opacity-100 transition-opacity"/>
